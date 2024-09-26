@@ -3,45 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Your Site Title</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start; /* Change to flex-start to align items at the top */
-            height: 100vh;
-            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
-            overflow: hidden; /* Prevent scrolling */
-            padding-top: 50px; /* Add padding at the top */
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 100px; /* Increased spacing for visibility while playing */
+        h1 {
+            color: #333;
         }
-        #game {
-            display: none;
-            margin-top: 20px; /* Reduced spacing to keep the button visible */
-            width: 800px; /* Set the width of the game */
-            height: 600px; /* Set the height of the game */
-            border: 1px solid #000; /* Optional: add a border around the game */
+        img {
+            max-width: 100%;
+            height: auto;
         }
+        /* Add more styling as needed */
     </style>
 </head>
 <body>
-    <h1>Your Text Here</h1>
-    <button onclick="loadGame()">Stickmanhook</button>
-    <iframe id="game" src="" frameborder="0" allowfullscreen></iframe>
-
-    <script>
-        function loadGame() {
-            var gameFrame = document.getElementById('game');
-            gameFrame.style.display = 'block'; // Show the game frame
-            gameFrame.src = 'https://mathpunch.github.io/kitty/'; // Set the game URL
-        }
-    </script>
+    <h1>Your Heading</h1>
+    <p>Your content goes here.</p>
+    <img src="image-url-here" alt="Description of image">
+    <!-- Add more content here -->
 </body>
 </html>
