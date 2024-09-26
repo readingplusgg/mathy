@@ -13,6 +13,7 @@
             height: 100vh;
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
         }
         button {
             padding: 10px 20px;
@@ -22,7 +23,7 @@
         }
         #game {
             display: none;
-            margin-top: 20px;
+            margin-top: 100px; /* Increased spacing */
             width: 800px; /* Set the width of the game */
             height: 600px; /* Set the height of the game */
             border: 1px solid #000; /* Optional: add a border around the game */
@@ -30,9 +31,9 @@
     </style>
 </head>
 <body>
-    <h1>Your Text Here</h1>
+    <h1 style="margin-bottom: 100px;">Your Text Here</h1> <!-- Increased margin-bottom for spacing -->
     <button onclick="loadGame()">Stickmanhook</button>
-    <iframe id="game" src="" frameborder="0"></iframe>
+    <iframe id="game" src="" frameborder="0" allowfullscreen></iframe>
 
     <script>
         function loadGame() {
