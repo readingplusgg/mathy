@@ -20,10 +20,26 @@
             cursor: pointer;
             margin-top: 20px;
         }
+        #game {
+            display: none;
+            margin-top: 20px;
+            width: 800px; /* Set the width of the game */
+            height: 600px; /* Set the height of the game */
+            border: 1px solid #000; /* Optional: add a border around the game */
+        }
     </style>
 </head>
 <body>
     <h1>Your Text Here</h1>
-    <button onclick="window.location.href='https://www.example.com';">Click Me</button>
+    <button onclick="loadGame()">Stickmanhook</button>
+    <iframe id="game" src="" frameborder="0"></iframe>
+
+    <script>
+        function loadGame() {
+            var gameFrame = document.getElementById('game');
+            gameFrame.style.display = 'block'; // Show the game frame
+            gameFrame.src = 'https://mathpunch.github.io/kitty/'; // Set the game URL
+        }
+    </script>
 </body>
 </html>
